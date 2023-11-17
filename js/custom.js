@@ -64,5 +64,35 @@ $(function(){
         centerMode: true,
         variableWidth: true,
     })
+
+    $('.mainSolution .solution_slide').on('afterChange', function(e, s, c){
+        //c = 0, 1 ,2...8
+        $('.mainSolution .solution_txt .txt_box li').removeClass('on');
+        $('.mainSolution .solution_txt .txt_box li').eq(c).addClass('on');
+        $('.mainSolution .solution_idx strong').text('0'+(c+1));
+    })
+
+    $('#promotion').YTPlayer({
+        videoURL:'https://youtu.be/5nnsleIF6Yw',
+        containment:'.mainPromotion .movie_case',
+        showControls: false,
+        optimizeDisplay: false,
+        playOnlyIfVisible: true,
+        autoPlay: false,
+    });
+
+    let movie = true;
+
+    $('.mainPromotion .movie_play').on('click', function(){
+        if(movie) {
+            $('#promotion').YTPPlay();
+        } else {
+            $('#promotion').YTPPause();
+        }
+
+        $(this).toggleClass('on');
+
+        movie = !movie;
+    })
     
 });

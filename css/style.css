@@ -96,7 +96,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     max-width: 1200px;
     width: 100%;
     padding: 0 15px;
@@ -234,6 +234,7 @@
         /* top: -60px; */
         transform: translate(-50%, 0);
     }
+
     100% {
         /* top: -20px; */
         transform: translate(-50%, 45px) scale(1.5);
@@ -256,7 +257,7 @@
 
     color: #fff;
     padding: 10px 12px;
-    font-size: 20px,;
+    font-size: 20px, ;
 }
 
 .mainVisual .play::after {
@@ -337,7 +338,7 @@
 .mainPortfolio .portfolio_inner {
     display: flex;
     gap: 30px;
-    width: calc((100% - 1200px) / 2 + 1200px );
+    width: calc((100% - 1200px) / 2 + 1200px);
     margin: 0 0 0 auto;
     padding: 0 0 0 15px;
 }
@@ -361,11 +362,12 @@
 }
 
 .mainPortfolio .portfolio_inner .pf_left_slide .img_box {
-    box-shadow: 10px 30px 30px rgba(0, 0 ,0 ,0.3);
-    margin: 0 0 50px 0 ;
+    box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.3);
+    margin: 0 0 50px 0;
 }
+
 .mainPortfolio .portfolio_inner .pf_right_slide .img_box {
-    margin: 0 0 50px 0 ;
+    margin: 0 0 50px 0;
 }
 
 .mainPortfolio .portfolio_inner .pf_right_slide figure {
@@ -378,7 +380,7 @@
 }
 
 .mainPortfolio .title {
-    margin: 0 0 40px 0 ; 
+    margin: 0 0 40px 0;
     padding: 40px 0 0 0;
     color: #fff;
 }
@@ -387,7 +389,7 @@
     display: flex;
     align-self: flex-start;
     border: 1px solid #fff;
-} 
+}
 
 .mainPortfolio .arrows li~li {
     border-left: 1px solid #fff;
@@ -399,6 +401,16 @@
     cursor: pointer;
     padding: 10px;
     color: #fff;
+}
+
+.mainSolution {
+    position: relative;
+    background: #f9f9f9;
+    padding: 100px 0 140px 0;
+}
+
+.mainSolution .title {
+    text-align: center;
 }
 
 .mainSolution .solution_slide figure {
@@ -416,6 +428,7 @@
 
 .mainSolution .solution_slide img {
     margin: 0 auto;
+
 }
 
 .mainSolution .solution_slide .slick-arrow {
@@ -429,7 +442,7 @@
     width: 100px;
     height: 40px;
     border: none;
-    background: rgba(0, 0 ,0 ,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .mainSolution .solution_slide .slick-prev {
@@ -455,7 +468,7 @@
     height: 1px;
     background: #fff;
     transform: rotate(-45deg);
-    transform-origin: left ;
+    transform-origin: left;
 }
 
 .mainSolution .solution_slide .slick-next {
@@ -481,7 +494,7 @@
     height: 1px;
     background: #fff;
     transform: rotate(45deg);
-    transform-origin: right ;
+    transform-origin: right;
 }
 
 .mainSolution .solution_slide .slick-dots {
@@ -506,4 +519,107 @@
 
 .mainSolution .solution_slide .slick-dots li button {
     display: none;
+}
+
+.mainSolution .solution_txt {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    margin: 0 0 0 -485px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mainSolution .solution_txt::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -24px;
+    width: 48px;
+    height: 2px;
+    background: #008850;
+}
+
+.mainSolution .solution_txt .txt_box {
+    padding: 40px;
+}
+
+.mainSolution .solution_txt .txt_box li {
+    visibility: hidden;
+    height: 0;
+}
+
+.mainSolution .solution_txt .txt_box li h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.mainSolution .solution_txt .txt_box li p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 32px 0;
+    height: 120px;
+}
+
+.mainSolution .solution_txt .txt_box li.on {
+    visibility: visible;
+    height: auto;
+}
+
+.mainSolution .solution_idx {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    margin: 0 0 0 -445px;
+    font-size: 20px;
+}
+
+.mainSolution .solution_idx strong {
+    font-size: 32px;
+    font-weight: 500;
+    color: #008850;
+}
+
+.mainPromotion {
+    background: url(../images/mainPromotionBg.jpg) no-repeat left bottom;
+}
+
+.mainPromotion .title {
+    text-align: center;
+}
+
+.mainPromotion .movie_case {
+    width: 800px;
+    height: calc(800px * 9 / 16);
+    background: #000000;
+    margin: 0 auto;
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.mainPromotion .movie_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: none;
+    border: 2px solid #008850;
+    border-radius: 50%;
+    padding: 20px 22px;
+    font-size: 24px;
+    color: #008850;
+    line-height: 1;
+
+}
+
+.mainPromotion .movie_play::before {
+    content: "\ea3e";
+    font-family: xeicon;
+}
+
+.mainPromotion .movie_play.on::before {
+    content: "\ea3b";
 }
